@@ -1,0 +1,15 @@
+{%  extends "base.html" %}
+
+{%  block content %}
+<p> This is {{ html_var }} coming through</p>
+    <p>
+        {%  if bool_item %}
+        Random number is {{ num }}
+        {%  endif %}
+    </p>
+    <p>
+        {%  for some_item in some_list %}
+            {{ some_item }} <br/>
+        {% endfor %}
+    </p>
+{%  endblock content %}
